@@ -1,0 +1,22 @@
+﻿  stdafx.cpp
+  CpuInfo.cpp
+  MonCPU.cpp
+C:\Projects\SystemMonitoring\SystemMonitoring\MonCPU.cpp(17,40): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
+  (compiling source file '/MonCPU.cpp')
+  
+C:\Projects\SystemMonitoring\SystemMonitoring\MonCPU.cpp(31,9): warning C4101: 'len': unreferenced local variable
+  (compiling source file '/MonCPU.cpp')
+  
+  MonMemory.cpp
+C:\Projects\SystemMonitoring\SystemMonitoring\MonMemory.cpp(13,15): warning C4244: '=': conversion from 'DWORDLONG' to 'unsigned int', possible loss of data
+  (compiling source file '/MonMemory.cpp')
+  
+C:\Projects\SystemMonitoring\SystemMonitoring\MonMemory.cpp(25,23): warning C4244: '=': conversion from 'DWORD' to 'float', possible loss of data
+  (compiling source file '/MonMemory.cpp')
+  
+  SystemMonitoring.cpp
+  Utils.cpp
+  Generating Code...
+  SystemMonitoring.vcxproj -> C:\Projects\SystemMonitoring\Debug\SystemMonitoring.exe
+  'pwsh.exe' is not recognized as an internal or external command,
+  operable program or batch file.
