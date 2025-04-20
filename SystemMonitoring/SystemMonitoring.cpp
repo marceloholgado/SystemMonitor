@@ -35,7 +35,6 @@ void HideCursor()
 	SetConsoleCursorInfo(hConsole, &cursorInfo);
 }
 
-
 int _tmain(int argc, _TCHAR* argv[])
 {
 	HideCursor();

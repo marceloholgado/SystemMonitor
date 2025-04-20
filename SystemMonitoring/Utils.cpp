@@ -7,15 +7,6 @@ namespace Utils{
 
 	std::mutex Console::mutex_;
 
-	Point::Point(){
-		x = 0;
-		y = 0;
-	}
-	Point::Point(int x, int y){
-		this->x = x;
-		this->y = y;
-	}
-
 	std::string WStringToString(const std::wstring& wstr) {
 		if (wstr.empty()) return {};
 
@@ -27,6 +18,15 @@ namespace Utils{
 			(int)wstr.size(), &result[0], sizeNeeded, NULL, NULL);
 
 		return result;
+	}
+
+	Point::Point(){
+		x = 0;
+		y = 0;
+	}
+	Point::Point(int x, int y){
+		this->x = x;
+		this->y = y;
 	}
 
 	void Console::WriteAtPoint(const std::string& str, Point p)

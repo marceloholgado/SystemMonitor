@@ -11,14 +11,6 @@ class MonCPU
 {
 private:
 	CpuInfo cpu;
-	std::wstring cpuName;
-	unsigned int cores;
-	unsigned int logicalProcessors;
-	unsigned int utilization;
-	unsigned int process;
-	unsigned int threads;
-	float baseSpeed;
-	float currentSpeed;
 
 public:
 	MonCPU();

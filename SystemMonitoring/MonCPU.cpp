@@ -11,10 +11,6 @@ MonCPU::MonCPU()
 	CpuInfo cpu;
 	if (cpu.Initialize()) {
 		this->cpu = cpu;
-		this->cpuName = cpu.GetName();
-		this->cores = cpu.GetPhysicalCores();
-		this->logicalProcessors = cpu.GetLogicalProcessors();
-		this->baseSpeed = cpu.GetBaseSpeedMHz();
 	}
 	else {
 		std::cout << "\nFail to initialize CPU Info\n";
@@ -33,12 +29,14 @@ void MonCPU::UpdateStats()
 	{
 		this->cpu.UpdateDynamicInfo();
 		std::stringstream ss;
-		ss << "CPU: " << WStringToString(this->cpuName)
-			<< "\nCores: " << this->cores
-			<< "\nLogical Processors: " << this->logicalProcessors
-			<< "\nBase Speed: " << this->baseSpeed
-			<< "\nCurrent Speed: " << this->currentSpeed
-			<< "\nUtilization: " << this->utilization;
+		ss  << "CPU: " << WStringToString(this->cpu.GetName())
+			<< "\nCores: " << this->cpu.GetPhysicalCores()
+			<< "\nLogical Processors: " << this->cpu.GetLogicalProcessors()
+			<< "\nBase Speed: " << this->cpu.GetBaseSpeedMHz() << " MHz"
+			<< "\nCurrent Speed: " << this->cpu.GetCurrentSpeedMHz() << " MHz"
+			<< "\nThreads: " << this->cpu.GetThreadCount()
+			<< "\nUtilization: " << this->cpu.GetUtilization() << "%";
 		Console::WriteAtPoint(ss.str(), Point(0, 3));
+		std::this_thread::sleep_for(std::chrono::milliseconds(100));
 	}
 }

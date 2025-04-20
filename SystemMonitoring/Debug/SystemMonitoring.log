@@ -1,10 +1,7 @@
 ﻿  stdafx.cpp
   CpuInfo.cpp
   MonCPU.cpp
-C:\Projects\SystemMonitoring\SystemMonitoring\MonCPU.cpp(17,40): warning C4244: '=': conversion from 'unsigned int' to 'float', possible loss of data
-  (compiling source file '/MonCPU.cpp')
-  
-C:\Projects\SystemMonitoring\SystemMonitoring\MonCPU.cpp(31,9): warning C4101: 'len': unreferenced local variable
+C:\Projects\SystemMonitoring\SystemMonitoring\MonCPU.cpp(27,9): warning C4101: 'len': unreferenced local variable
   (compiling source file '/MonCPU.cpp')
   
   MonMemory.cpp
